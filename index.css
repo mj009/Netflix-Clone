@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+:root {
+    --btnColor: rgb(228, 4, 15);
+    /* --btnColor: orange; */
+  }
+
+.tempBorder{
+    border: 2px solid white;
+}
+
+#container{
+    background-image: url("Assets/Images/Hero BG.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    /* border: 2px solid palevioletred; */
+}
+
+#filter-box{
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    opacity: 0.6;
+    width: 100%;
+    height: 700px;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > img{
+    margin-left: 175px;
+    margin-top: -10px;
+    width: 160px;
+}
+
+#button-box{
+    width: 230px;
+    height: 30px;
+    /* background-color: brown; */
+    margin-right: 202px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+}
+
+#lang-box{
+    width: 125px;
+    height: 30px;
+    border: 1px solid grey;
+    padding-top: 2px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lg-icon{
+    width: 22px;
+    height: 22px;
+}
+
+.lg-icon2{
+    width: 10px;
+    height: 10px;
+}
+
+.lang-txt{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+#button-box button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 32px;
+    background-color: var(--btnColor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#heroBigBox{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-box p{
+    color: white;
+    text-align: center;
+}
+
+#hero-box > p:first-child{
+    font-weight: 1000;
+    font-size: 48px;
+}
+
+#hero-box > p:nth-child(2){
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#hero-box > p:nth-child(3){
+    font-size: 20px;
+}
+
+.emailForm{
+    display: flex;
+    justify-content: center;
+}
+
+.emailForm input{
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.emailForm input[type="email"]{
+    background-color: rgb(17, 17, 17  , 0.5);
+    color:white;
+    width: 350px;
+    height: 55px;
+    border: 1px solid gray;
+    background-color: none;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+
+.emailForm input::placeholder{
+    color: rgb(190, 188, 188);
+    /* font-family: "Martel Sans", sans-serif; */
+    padding-left: 3px;
+    font-size: 15px;
+}
+
+.emailForm input:focus{
+    outline: none;
+}
+
+.emailForm input[type="submit"]{
+    width: 200px;
+    height: 55px;
+    background-color: var(--btnColor);
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 650;
+    border-radius: 5px;
+}
+
+/* hr{
+    width: 100%;
+    height: 10px;
+    background-color: #232323;
+} */
+
+.divider{
+    width: 100%;
+    height: 10px;
+    background-color: #232323;
+}
+
+.infoBox{
+    width: 100%;
+    height: 630px;
+}
+
+#infoBox1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+#detailBox{
+    /* border: 2px solid white; */
+    width: 700px;
+}
+
+#detailBox p:first-child{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+#detailBox p:nth-child(2){
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#tvBox{
+    /* border: 2px solid white; */
+    position: relative;
+}
+
+#tvBox img{
+    position: relative;
+    z-index: 1;
+}
+
+#tvBox video{
+    position: absolute;
+    left: 77px;
+    top: 97px;
+}
+
+#infoBox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+#phoneBox{
+    display: flex;
+    /* outline: 2px solid white ; */
+    position: relative;
+}
+
+#phoneContent{
+    width: 20.5vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid grey;
+    bottom: 36px;
+    left: 145px;
+    border-radius: 16px;
+    background-color: black;
+}
+
+.leftMovieInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.imgPoster{
+    margin-left: 15px;
+    width: 55.5px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+#movieInfo p:nth-child(1){
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+#movieInfo :nth-child(2){
+    color: #0071EB;
+    font-size: 14px;
+}
+
+.loading{
+    width: 50px;
+    margin-right: 10px;
+}
+
+#infoBox3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#multiBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 2px solid wheat; */
+}
+
+#multiBox img{
+    position: relative;
+    z-index: 10;
+}
+
+.videoBox{
+    position: absolute;
+    top: 37px;
+    left: 111px;
+    width: 400px;
+    height: 246px;
+    overflow: hidden;
+}
+
+#faqBox{
+    width: 100%;
+    /* height: 920px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#faqBox > p{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.quesBox{
+    width: 70vw;
+    height: 100px;
+    background-color: #414141;;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quesBox p{
+    padding: 0px 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.quesBox svg{
+    padding: 0px 30px;
+}
+
+#faqBox span{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form2{
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.mainBox{
+    width: 80vw;
+    margin: 60px 0px;
+}
+
+.mainBox > p{
+    color: #b8b8b8;
+    font-size: 16px;
+}
+
+.link-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.link-container p{
+    width: 300px;
+    /* outline: 2px solid white; */
+}
+
+.lb2{
+    margin-top: 20px;
+    background-color: rgb(23, 23, 23);
+    margin-bottom: 20px;
+}
